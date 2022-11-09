@@ -1,4 +1,4 @@
-package tutorial.misionTIC.seguridad;
+package tutorial.misionTIC.seguridad.misionTIC.seguridad;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
