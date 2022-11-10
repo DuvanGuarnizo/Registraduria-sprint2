@@ -71,7 +71,7 @@ public class ControladorUsuario {
      * Relación (1 a n) entre rol y usuario
      * @param
      * @return
-     *
+     * Correcto
      *    */
 
     @PutMapping("{id}/rol/{id_rol}")
