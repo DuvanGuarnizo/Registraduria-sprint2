@@ -16,6 +16,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/permisos-roles")
 public class ControladorPermisosRoles {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 73a45cb9761c065bb83f4a40b41910a26864325b
     @Autowired
     private RepositorioPermisosRoles miRepositorioPermisoRoles;
 
@@ -36,7 +40,10 @@ public class ControladorPermisosRoles {
      * @param id_permiso
      * @return
      */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 73a45cb9761c065bb83f4a40b41910a26864325b
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("rol/{id_rol}/permiso/{id_permiso}")
     public PermisosRoles create(@PathVariable String id_rol,@PathVariable String id_permiso){
@@ -67,7 +74,10 @@ public class ControladorPermisosRoles {
      * @param id_permiso
      * @return
      */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 73a45cb9761c065bb83f4a40b41910a26864325b
     @PutMapping("{id}/rol/{id_rol}/permiso/{id_permiso}")
     public PermisosRoles update(@PathVariable String id,@PathVariable String id_rol,@PathVariable String id_permiso){
         PermisosRoles permisosRolesActual=this.miRepositorioPermisoRoles
@@ -94,6 +104,7 @@ public class ControladorPermisosRoles {
             this.miRepositorioPermisoRoles.delete(permisosRolesActual);
         }
     }
+<<<<<<< HEAD
 
     @GetMapping("validar-permiso/rol/{id_rol}")
     public PermisosRoles getPermiso(@PathVariable String id_rol,@RequestBody Permiso infoPermiso){
@@ -108,4 +119,6 @@ public class ControladorPermisosRoles {
         }
     }
 
+=======
+>>>>>>> 73a45cb9761c065bb83f4a40b41910a26864325b
 }

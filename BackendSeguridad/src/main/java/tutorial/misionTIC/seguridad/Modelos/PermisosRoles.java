@@ -1,11 +1,18 @@
 package tutorial.misionTIC.seguridad.Modelos;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 73a45cb9761c065bb83f4a40b41910a26864325b
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
+<<<<<<< HEAD
 
+=======
+//permisos
+>>>>>>> 73a45cb9761c065bb83f4a40b41910a26864325b
 @Data
 @Document
 public class PermisosRoles {
@@ -38,4 +45,8 @@ public class PermisosRoles {
     public void setPermiso(Permiso permiso) {
         this.permiso = permiso;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 73a45cb9761c065bb83f4a40b41910a26864325b
