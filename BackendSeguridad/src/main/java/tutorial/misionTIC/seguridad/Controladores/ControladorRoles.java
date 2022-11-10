@@ -1,4 +1,68 @@
 package tutorial.misionTIC.seguridad.Controladores;
 
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+import tutorial.misionTIC.seguridad.Modelos.Rol;
+import tutorial.misionTIC.seguridad.Repositorios.RepositorioRol;
+
+import java.util.List;
+
+@CrossOrigin
+@RestController
+@RequestMapping("/roles")
 public class ControladorRoles {
+
+    @Autowired
+    private RepositorioRol miRepositorioRol;
+
+    //CREAR UN ROL
+    @ResponseStatus(HttpStatus.CREATED)
+    @PostMapping("")
+    public Rol create(@RequestBody Rol infoRol){
+        return this.miRepositorioRol.save(infoRol);
+    }
+
+    //LISTAR TODOS LOS ROLES
+    @GetMapping("")
+    public List<Rol> index(){
+        return this.miRepositorioRol.findAll();
+    }
+
+    //LISTAR ROL POR ID
+    @GetMapping("{id}")
+    public Rol show(@PathVariable String id){
+        Rol rolActual = this.miRepositorioRol
+                .findById(id)
+                .orElse(null);
+        return rolActual;
+    }
+
+    //ACTUALIZAR ROL
+    @PutMapping("{id}")
+    public Rol update(@PathVariable String id, @RequestBody Rol infoRol){
+        Rol rolActual = this.miRepositorioRol
+                .findById(id)
+                .orElse(null);
+        if(rolActual != null){
+            rolActual.setNombre(infoRol.getNombre());
+            rolActual.setDescripcion(infoRol.getDescripcion());
+            return this.miRepositorioRol.save(rolActual);
+        }else{
+            return null;
+        }
+    }
+
+    //ELIMINAR ROL
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @DeleteMapping("{id}")
+    public void delete(@PathVariable String id){
+        Rol rolActual = this.miRepositorioRol
+                .findById(id)
+                .orElse(null);
+        if(rolActual != null){
+            this.miRepositorioRol.delete(rolActual);
+        }
+    }
 }

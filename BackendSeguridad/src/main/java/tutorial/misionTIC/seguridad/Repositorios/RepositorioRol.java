@@ -1,4 +1,7 @@
 package tutorial.misionTIC.seguridad.Repositorios;
 
-public interface RepositorioRol {
+import org.springframework.data.mongodb.repository.MongoRepository;
+import tutorial.misionTIC.seguridad.Modelos.Rol;
+
+public interface RepositorioRol extends MongoRepository<Rol, String> {
 }
