@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc566863-c1cd-497d-84ba-9ba70fc33f97" name="Changes" comment="first commit" />
+    <list default="true" id="547049b6-f644-49ad-80ea-cb7c50056189" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApyGateway/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApyGateway/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendSeguridad/src/main/java/tutorial/misionTIC/seguridad/Modelos/Permiso.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendSeguridad/src/main/java/tutorial/misionTIC/seguridad/Modelos/Permiso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendSeguridad/src/main/java/tutorial/misionTIC/seguridad/Modelos/PermisoRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendSeguridad/src/main/java/tutorial/misionTIC/seguridad/Modelos/PermisoRoles.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +17,31 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="diego" />
+                    <option name="lastUsedInstant" value="1668091667" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="desarrollo" />
+                    <option name="lastUsedInstant" value="1668091666" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -29,7 +59,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Santiago/Personal/Cursos/Misión-TIC/Ciclo4/Sprint2/BackendSeguridad",
+    "last_opened_file_path": "D:/Cursos/carrera-unac/ciclo-4A-desarrollo-de-aplicaciones-web/ApiGateway",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
@@ -56,7 +86,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dc566863-c1cd-497d-84ba-9ba70fc33f97" name="Changes" comment="" />
+      <changelist id="547049b6-f644-49ad-80ea-cb7c50056189" name="Changes" comment="first commit" />
       <created>1667947857884</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
