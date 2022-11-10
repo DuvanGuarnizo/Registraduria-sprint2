@@ -13,8 +13,8 @@ public class Usuario {
     private String contrasena;
     ///usuario que rol tiene vinculacion segun la tabla
 
-    //@DBRef
-   // private Rol rol;
+    @DBRef
+    private Rol rol;
 
 
 

@@ -20,8 +20,8 @@ import java.security.NoSuchAlgorithmException;
 public class ControladorUsuario {
     @Autowired
     private RepositorioUsuario miRepositorioUsuario;
-    //@Autowired
-   // private RepositorioRol miRepositorioRol;
+    @Autowired
+    private RepositorioRol miRepositorioRol;
 
     @GetMapping("")
     public List<Usuario> index(){
@@ -71,6 +71,8 @@ public class ControladorUsuario {
      * Relación (1 a n) entre rol y usuario
      * @param
      * @return
+     *
+     *    */
 
     @PutMapping("{id}/rol/{id_rol}")
     public Usuario asignarRolAUsuario(@PathVariable String id,@PathVariable String id_rol){
@@ -88,7 +90,7 @@ public class ControladorUsuario {
         }
 
     }
-     */
+
     @PostMapping("/validar")
     public Usuario validate(@RequestBody  Usuario infoUsuario, final HttpServletResponse response) throws IOException {
         Usuario usuarioActual=this.miRepositorioUsuario
