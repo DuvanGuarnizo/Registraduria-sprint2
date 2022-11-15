@@ -148,7 +148,7 @@ def asignarPartidoCandidato(id,id_partido):
 #Endpoint para mostrar todas las materias
 @app.route("/candidato",methods=['GET'])
 def getCandidatos():
-    json = miControladorCandidato.index()
+    json=miControladorCandidato.index()
     return jsonify(json)
 
 #Crear materia

@@ -229,7 +229,7 @@ def asignarPartidoCandidato(id,id_partido):
 @app.route("/resultado",methods=['GET'])
 def getResultados():
     headers = {"Content-Type": "application/json; charset=utf-8"}
-    url = dataConfig["url-backend-resultado"] + '/resultado/' + id
+    url = dataConfig["url-backend-resultado"] + '/resultado/'
     response = requests.delete(url, headers=headers)
     json = response.json()
     return jsonify(json)

@@ -8,16 +8,6 @@ class ControladorCandidato():
         self.candidatoRepositorio = CandidatoRepositorio()
         self.partidoRepositorio = PartidoRepositorio()
 
-    """
-    Relación partido candidato
-    """
-
-    def asignarPartido(self, id, id_partido):
-        candidatoActual = Candidato(self.candidatoRepositorio.findById(id))
-        partidoActual = Partido(self.partidoRepositorio.findById(id_partido))
-        candidatoActual.Partido = partidoActual
-        return self.candidatoRepositorio.save(candidatoActual)
-
     def index(self):
         print("Listar todos los candidatos")
         return self.candidatoRepositorio.findAll()
@@ -44,3 +34,9 @@ class ControladorCandidato():
     def delete(self, id):
         print("Elimiando candidato con id ", id)
         return self.candidatoRepositorio.delete(id)
+
+    def asignarPartido(self, id, id_partido):
+        candidatoActual = Candidato(self.candidatoRepositorio.findById(id))
+        partidoActual = Partido(self.partidoRepositorio.findById(id_partido))
+        candidatoActual.Partido = partidoActual
+        return self.candidatoRepositorio.save(candidatoActual)
