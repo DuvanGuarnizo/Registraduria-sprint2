@@ -75,7 +75,7 @@ def getPartidos():
     return jsonify(json)
 
 @app.route("/partido",methods=['POST'])
-def crearPartidos():
+def crearPartido():
     data = request.get_json()
     json=miControladorPartido.create(data)
     return jsonify(json)
@@ -139,19 +139,20 @@ def resultadosEnCandidato(id_candidato):
 
 ####RELACIÓN candidato partido####
 @app.route("/candidato/<string:id>/partido/<string:id_partido>",methods=['PUT'])
-def asignarPartidoCandidato(id,id_partido):
+def asignarPartidoACandidato(id,id_partido):
     json=miControladorCandidato.asignarPartido(id,id_partido)
     return jsonify(json)
 
-######SERVICO MATERIA######
+######SERVICO CANDIDATO######
 
-#Endpoint para mostrar todas las materias
+#Endpoint para mostrar todos los candidatos
 @app.route("/candidato",methods=['GET'])
 def getCandidatos():
     json=miControladorCandidato.index()
     return jsonify(json)
+    print ("mostrar todos los candidatos")
 
-#Crear materia
+#Crear candidato
 @app.route("/candidato",methods=['POST'])
 def crearCandidato():
     data = request.get_json()
